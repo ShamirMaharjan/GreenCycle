@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from "react";
+import Signup from "./Page/Signup";
+import Login from "./Page/Login";
 
-const App = () => {
+function App() {
+  const [isSignup, setIsSignup] = useState(true); // State to toggle between Signup and Login
+
   return (
-    <div className='text-3xl font-bold bg-slate-400 text-white'>App</div>
-  )
+    <div>
+      {/* Conditional Rendering based on isSignup state */}
+      {isSignup ? (
+        <Signup setIsSignup={setIsSignup} />
+      ) : (
+        <Login setIsSignup={setIsSignup} />
+      )}
+    </div>
+  );
 }
 
-export default App
+export default App;
