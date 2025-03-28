@@ -4,14 +4,14 @@ import logo from '../assets/logo.png'; // Import the logo image
 const Signup = ({ setIsSignup }) => {
   return (
     <div className="relative flex items-center justify-center min-h-screen bg-green-500">
-      
+
       {/* White container with green edges */}
       <div className="absolute inset-0 bg-white clip-path-custom"></div>
 
       <div className="relative z-10 w-full max-w-md p-8 bg-white shadow-lg rounded-lg">
         {/* Logo */}
         <div className="flex justify-center mb-4">
-        <img src={logo} alt="Green Cycle Tech" style={{ height: '100px', width: 'auto' }} />
+          <img src={logo} alt="Green Cycle Tech" style={{ height: '100px', width: 'auto' }} />
         </div>
 
 
